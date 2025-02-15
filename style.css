@@ -1,0 +1,245 @@
+/* Estilos globales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #1a1a1a;
+    color: white;
+}
+
+header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ff0000;
+}
+
+header .carrito a {
+    font-size: 1.2em;
+    color: white;
+}
+
+/* Banner */
+.banner {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 50px 20px;
+}
+
+.banner h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.banner p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.banner .btn {
+    text-decoration: none;
+    color: white;
+    background-color: #ff0000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.banner .btn:hover {
+    background-color: #ff0000;
+}
+
+/* Catálogo */
+#catalogo {
+    padding: 40px 20px;
+    background-color: white;
+}
+
+#catalogo h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.barra-busqueda input {
+    display: block;
+    margin: 0 auto 20px;
+    padding: 10px;
+    width: 50%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.filtros {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.filtros button {
+    margin: 0 5px;
+    padding: 10px 15px;
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.filtros button:hover {
+    background-color: #ff0000;
+}
+
+.juegos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.juego {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    padding: 15px;
+    width: 250px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.juego img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.juego h3 {
+    margin: 10px 0;
+}
+
+.juego button {
+    padding: 10px 15px;
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.juego button:hover {
+    background-color: #ff0000;
+}
+
+/* Carrito */
+#carrito {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+#carrito h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#carrito table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto 20px;
+}
+
+#carrito table th, #carrito table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+#carrito button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#carrito button:hover {
+    background-color: #0199a6;
+}
+
+/* Contacto */
+#contacto {
+    padding: 40px 20px;
+    background-color: white;
+}
+
+#contacto h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#contacto form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#contacto form input, #contacto form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contacto form button {
+    padding: 10px 20px;
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#contacto form button:hover {
+    background-color: #ff0000;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #1a1a1a;
+    color: white;
+}

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Juegos</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .juegos .juego img {
+            width: 200px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgb(255, 0, 0);
+        }
+
+        button {
+            background-color: rgb(255, 0, 0);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .carrito-lista {
+            list-style: none;
+            padding: 0;
+        }
+
+        .carrito-lista li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">Tienda de Juegos</div>
+        <nav>
+            <ul>
+                <li><a href="#catalogo">Catálogo</a></li>
+                <li><a href="#carrito">Carrito</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="catalogo">
+        <h2>Catálogo de Juegos</h2>
+        <div class="juegos">
+            <!-- Juego 1 -->
+            <div class="juego" data-name="CALL OF DUTY MODERN WARFARE 1" data-price="20">
+                <img src="https://th.bing.com/th/id/R.3f0159131c731bad9f2186d380f07d5d?rik=CWVqNZ4hNaZXjA&riu=http%3a%2f%2fwww.imfdb.org%2fimages%2fe%2fe7%2fCall_of_Duty_Modern_Warfare_Remastered.jpg&ehk=lYoP69q8yfSG4zdExumetWOUWEseauitLHe7R5tPNUQ%3d&risl=&pid=ImgRaw&r=0" alt="Juego 1">
+                <h3>CALL OF DUTY MODERN WARFARE 1</h3>
+                <p>Precio: $20</p>
+                <button class="add-to-cart">Añadir al carrito</button>
+            </div>
+            <!-- Juego 2 -->
+            <div class="juego" data-name="GTA 5" data-price="30">
+                <img src="https://gamingbeasts.com/wp-content/uploads/2020/12/Grand-Theft-Auto-V-1.jpg" alt="Juego 2">
+                <h3>GTA 5</h3>
+                <p>Precio: $30</p>
+                <button class="add-to-cart">Añadir al carrito</button>
+            </div>
+            <!-- Juego 3 -->
+            <div class="juego" data-name="Batman: Arkham Knight" data-price="30">
+                <img src="https://cdn.collider.com/wp-content/uploads/2015/03/batman-arkham-knight-poster.jpg" alt="Juego 3">
+                <h3>Batman: Arkham Knight</h3>
+                <p>Precio: $30</p>
+                <button class="add-to-cart">Añadir al carrito</button>
+            </div>
+            <!-- Juego 4 -->
+            <div class="juego" data-name="Red Dead Redemption 2" data-price="40">
+                <img src="https://wallpapercave.com/wp/wp6364510.jpg" alt="Juego 4">
+                <h3>Red</h3>
+                <p>Precio: $40</p>
+                <button class="add-to-cart">Añadir al carrito</button>
+            </div>
+            <div class="juego" data-name="Red Dead Redemption 2" data-price="40">
+                <img src="https://image.api.playstation.com/cdn/JP0365/CUSA08806_00/D9W8V0pZd3Q36y4xD3x9HqwRqeoxX7oSYz9uA8Nyviev43ixO04rsXAsNh9OC14g.png" alt="Juego 4">
+                <h3>Red</h3>
+                <p>Precio: $40</p>
+                <button class="add-to-cart">Añadir al carrito</button>
+            </div>
+            <div class="juego" data-name="Red Dead Redemption 2" data-price="40">
+                <img src="https://th.bing.com/th/id/OIP.LXwrTthLtUfEQQ9scYqvRQHaKf?rs=1&pid=ImgDetMain" alt="Juego 4">
+                <h3>Red</h3>
+                <p>Precio: $40</p>
+                <button class="add-to-cart">Añadir al carrito</button>
+            </div>
+            <div class="juego" data-name="Red Dead Redemption 2" data-price="40">
+                <img src="https://vignette.wikia.nocookie.net/civilization/images/8/8d/Civ6_Rise_and_Fall_Box_Art.jpg/revision/latest?cb=20181215205856" alt=" alt="Juego 4">
+                <h3>Red</h3>
+                <p>Precio: $40</p>
+                <button class="add-to-cart">Añadir al carrito</button>
+            </div>
+            <div class="juego" data-name="Red Dead Redemption 2" data-price="40">
+                <img src="https://th.bing.com/th/id/R.d8ce291a7e50762eaa1f693ec9f912b2?rik=Du0KUsgP5Cx6oA&riu=http%3a%2f%2froyalcdkeys.com%2fcdn%2fshop%2fproducts%2f4IdJ6raOsTWqtrgjq_rQnleFaAfYEG1jAHHr-V7wI_M_350x200_1x-0_1024x1024.jpg%3fv%3d1671107687&ehk=bxyCuiodQGxEOMLexIcJIsRq%2fLGzlgTBM2%2f8RW%2bUiyQ%3d&risl=&pid=ImgRaw&r=0" alt="Juego 4">
+                <h3>Red</h3>
+                <p>Precio: $40</p>
+                <button class="add-to-cart">Añadir al carrito</button>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="carrito">
+        <h2>Carrito de Compras</h2>
+        <ul class="carrito-lista"></ul>
+        <p>Total: $<span id="total">0</span></p>
+        <button id="vaciar-carrito">Vaciar Carrito</button>
+    </section>
+
+    <script>
+        let carrito = [];
+
+        document.querySelectorAll(".add-to-cart").forEach(button => {
+            button.addEventListener("click", event => {
+                const juego = event.target.parentElement;
+                const nombre = juego.dataset.name;
+                const precio = parseFloat(juego.dataset.price);
+                
+                carrito.push({ nombre, precio });
+                actualizarCarrito();
+            });
+        });
+
+        function actualizarCarrito() {
+            const lista = document.querySelector(".carrito-lista");
+            lista.innerHTML = "";
+            let total = 0;
+
+            carrito.forEach((item, index) => {
+                total += item.precio;
+                const li = document.createElement("li");
+                li.innerHTML = `${item.nombre} - $${item.precio} <button onclick="eliminarDelCarrito(${index})">X</button>`;
+                lista.appendChild(li);
+            });
+
+            document.getElementById("total").textContent = total;
+        }
+
+        function eliminarDelCarrito(index) {
+            carrito.splice(index, 1);
+            actualizarCarrito();
+        }
+
+        document.getElementById("vaciar-carrito").addEventListener("click", () => {
+            carrito = [];
+            actualizarCarrito();
+        });
+    </script>
+</body>
+
+</html>
